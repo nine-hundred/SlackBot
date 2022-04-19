@@ -16,6 +16,7 @@ $ go get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip
 
 ### 기타
  - 람다에서 AWS-SNS의 정보를 받기 위해선, HandleRequest의 두번째 파라미터를 SNSEvent로 추가하는 것이 좋습니다.
+ - go env의 os를 windows -> linux 로 변경되었는지 확인 후 빌드(go build)합니다
 
 ### 참고
 - https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-golang.html
